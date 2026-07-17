@@ -8,7 +8,6 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { ConciergeChat } from "@/components/ai/concierge-chat";
-import { CustomCursor } from "@/components/ui/custom-cursor";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -44,7 +43,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <CustomCursor />
           <Navbar />
           <main className="flex-grow pt-[72px]">{children}</main>
           <ConciergeChat />
