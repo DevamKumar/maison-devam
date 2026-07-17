@@ -68,7 +68,7 @@ export default function HomePage() {
       />
 
       {/* 2. Stats Banner */}
-      <section className="bg-charcoal text-ivory border-y border-gold/30 py-12 px-4 sm:px-6 lg:px-8">
+      <section className="bg-ivory dark:bg-charcoal text-foreground dark:text-ivory border-y border-gold/30 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
           {STATS_DATA.map((stat, index) => (
             <motion.div
@@ -82,7 +82,7 @@ export default function HomePage() {
               <span className="font-serif text-4xl md:text-5xl font-bold gold-gradient-text mb-2">
                 {stat.value}
               </span>
-              <span className="text-xs uppercase tracking-[0.2em] text-zinc-400 font-light">
+              <span className="text-xs uppercase tracking-[0.2em] text-zinc-600 dark:text-zinc-400 font-medium">
                 {stat.label}
               </span>
             </motion.div>
@@ -363,7 +363,9 @@ export default function HomePage() {
                   >
                     {pkg.name}
                   </h3>
-                  <p className="text-xs text-zinc-400 leading-relaxed font-light mb-4">
+                  <p className={`text-xs leading-relaxed font-light mb-4 ${
+                    pkg.recommended ? "text-zinc-300" : "text-zinc-600 dark:text-zinc-400"
+                  }`}>
                     {pkg.description}
                   </p>
 
@@ -371,7 +373,9 @@ export default function HomePage() {
                     {pkg.features.map((feat) => (
                       <li
                         key={feat}
-                        className="flex items-start gap-2.5 text-xs text-zinc-300 dark:text-zinc-300 font-light"
+                        className={`flex items-start gap-2.5 text-xs font-light ${
+                          pkg.recommended ? "text-zinc-200" : "text-zinc-600 dark:text-zinc-300"
+                        }`}
                       >
                         <Sparkles className="w-3.5 h-3.5 text-gold flex-shrink-0 mt-0.5" />
                         <span>{feat}</span>

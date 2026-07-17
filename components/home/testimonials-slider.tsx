@@ -68,7 +68,7 @@ export const TestimonialsSlider: React.FC = () => {
                     {current.serviceUsed}
                   </p>
                 </div>
-                <span className="text-[11px] text-zinc-400 font-light">
+                <span className="text-[11px] text-zinc-600 dark:text-zinc-400 font-light">
                   {current.date}
                 </span>
               </div>
@@ -86,7 +86,7 @@ export const TestimonialsSlider: React.FC = () => {
         >
           <ChevronLeft className="w-5 h-5" />
         </button>
-        <span className="font-serif text-xs uppercase tracking-widest text-zinc-400">
+        <span className="font-serif text-xs uppercase tracking-widest text-zinc-600 dark:text-zinc-400 font-medium">
           {currentIndex + 1} / {TESTIMONIALS_DATA.length}
         </span>
         <button

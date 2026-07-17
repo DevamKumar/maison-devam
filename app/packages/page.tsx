@@ -81,7 +81,9 @@ export default function PackagesPage() {
                   >
                     {pkg.name}
                   </h3>
-                  <p className="text-xs text-zinc-400 dark:text-zinc-400 leading-relaxed font-light mb-6">
+                  <p className={`text-xs leading-relaxed font-light mb-6 ${
+                    pkg.recommended ? "text-zinc-300" : "text-zinc-600 dark:text-zinc-400"
+                  }`}>
                     {pkg.description}
                   </p>
 
@@ -93,7 +95,9 @@ export default function PackagesPage() {
                       {pkg.features.map((feature) => (
                         <li
                           key={feature}
-                          className="flex items-start gap-2.5 text-xs font-light text-zinc-300 dark:text-zinc-300"
+                          className={`flex items-start gap-2.5 text-xs font-light ${
+                            pkg.recommended ? "text-zinc-200" : "text-zinc-600 dark:text-zinc-300"
+                          }`}
                         >
                           <Check className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
                           <span>{feature}</span>

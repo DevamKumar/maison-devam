@@ -374,7 +374,9 @@ function BookingWizardContent() {
                       >
                         {item.name}
                       </h3>
-                      <p className="text-xs text-zinc-400 line-clamp-2 leading-relaxed font-light">
+                      <p className={`text-xs line-clamp-2 leading-relaxed font-light ${
+                        isSelected ? "text-zinc-300" : "text-zinc-600 dark:text-zinc-400"
+                      }`}>
                         {item.description}
                       </p>
                     </div>
@@ -450,7 +452,9 @@ function BookingWizardContent() {
                   <h3 className="font-serif font-bold text-lg">
                     First Available Master Artisan
                   </h3>
-                  <p className="text-xs text-zinc-400 mt-1 font-light">
+                  <p className={`text-xs mt-1 font-light ${
+                    selectedStylist.id === "any-senior" ? "text-zinc-300" : "text-zinc-600 dark:text-zinc-400"
+                  }`}>
                     Assigned to one of our accredited senior specialists based on exact slot timing.
                   </p>
                   <span className="text-[11px] font-semibold text-gold tracking-widest uppercase block mt-2">
@@ -488,16 +492,25 @@ function BookingWizardContent() {
                     <img
                       src={stylist.image}
                       alt={stylist.name}
-                      className="w-16 h-16 rounded-full object-cover border border-gold flex-shrink-0 shadow-md"
+                      className="w-16 h-16 rounded-full object-cover border border-gold shadow-md flex-shrink-0"
                     />
                     <div className="flex-grow">
-                      <span className="text-[10px] text-gold uppercase tracking-widest font-semibold block">
+                      <div className="flex items-center justify-between">
+                        <h3 className="font-serif font-bold text-lg">
+                          {stylist.name}
+                        </h3>
+                        {surcharge > 0 && (
+                          <span className="text-xs text-gold font-bold">
+                            +₹{surcharge}
+                          </span>
+                        )}
+                      </div>
+                      <span className="text-[10px] text-gold uppercase tracking-wider block font-medium">
                         {stylist.role}
                       </span>
-                      <h3 className="font-serif font-bold text-lg mt-0.5">
-                        {stylist.name}
-                      </h3>
-                      <p className="text-xs text-zinc-400 line-clamp-1 font-light mt-1">
+                      <p className={`text-xs line-clamp-1 font-light mt-1 ${
+                        isSelected ? "text-zinc-300" : "text-zinc-600 dark:text-zinc-400"
+                      }`}>
                         {stylist.bio}
                       </p>
                       <span className="text-[11px] font-semibold text-gold tracking-widest uppercase block mt-2">

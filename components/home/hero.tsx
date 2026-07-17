@@ -99,7 +99,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenVideo }) => {
         </motion.p>
 
         {/* Floating Luxury Badges (Desktop Only) */}
-        <div className="absolute left-6 top-1/3 -translate-y-1/2 hidden xl:flex flex-col gap-1 p-3.5 rounded-2xl glass-panel animate-float text-left z-20 max-w-[210px] border border-gold/40 shadow-2xl">
+        <div className="absolute left-6 top-1/3 -translate-y-1/2 hidden xl:flex flex-col gap-1 p-3.5 rounded-2xl bg-black/75 backdrop-blur-xl animate-float text-left z-20 max-w-[210px] border border-gold/40 shadow-2xl">
           <div className="flex items-center gap-1.5 text-gold text-[10px] font-bold tracking-widest uppercase">
             <Sparkles className="w-3.5 h-3.5 text-[#25D366]" />
             <span>Cellular Index</span>
@@ -112,7 +112,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenVideo }) => {
           </span>
         </div>
 
-        <div className="absolute right-6 top-1/2 -translate-y-1/2 hidden xl:flex flex-col gap-1 p-3.5 rounded-2xl glass-panel animate-float [animation-delay:2.5s] text-left z-20 max-w-[210px] border border-gold/40 shadow-2xl">
+        <div className="absolute right-6 top-1/2 -translate-y-1/2 hidden xl:flex flex-col gap-1 p-3.5 rounded-2xl bg-black/75 backdrop-blur-xl animate-float [animation-delay:2.5s] text-left z-20 max-w-[210px] border border-gold/40 shadow-2xl">
           <div className="flex items-center gap-1.5 text-gold text-[10px] font-bold tracking-widest uppercase">
             <Calendar className="w-3.5 h-3.5 text-gold" />
             <span>Royal Suites</span>
