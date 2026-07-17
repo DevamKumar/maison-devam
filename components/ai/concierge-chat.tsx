@@ -436,8 +436,8 @@ export const ConciergeChat: React.FC = () => {
 
   return (
     <>
-      {/* Floating Concierge Trigger Button (Right bottom on phone like WhatsApp, Left bottom on laptop like right now) */}
-      <div className="fixed bottom-6 right-6 md:left-6 md:right-auto z-50 flex items-center">
+      {/* Floating Concierge Trigger Button (Right bottom across all devices) */}
+      <div className="fixed bottom-6 right-6 z-50 flex items-center">
         <motion.button
           onClick={() => setIsOpen(!isOpen)}
           whileHover={{ scale: 1.05 }}
@@ -483,7 +483,7 @@ export const ConciergeChat: React.FC = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 30, scale: 0.92 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="fixed bottom-20 right-4 sm:right-6 md:left-6 md:right-auto md:bottom-24 z-50 w-[92vw] sm:w-[420px] h-[580px] max-h-[80vh] bg-[#121212]/95 backdrop-blur-2xl border border-gold/40 rounded-3xl shadow-[0_25px_60px_rgba(0,0,0,0.8)] flex flex-col overflow-hidden"
+            className="fixed bottom-20 right-4 sm:right-6 md:bottom-24 z-50 w-[92vw] sm:w-[420px] h-[580px] max-h-[80vh] bg-[#121212]/95 backdrop-blur-2xl border border-gold/40 rounded-3xl shadow-[0_25px_60px_rgba(0,0,0,0.8)] flex flex-col overflow-hidden"
           >
             {/* Header */}
             <div className="relative p-4 px-5 bg-gradient-to-r from-[#1b1915] via-[#221d12] to-[#1b1915] border-b border-gold/30 flex items-center justify-between">
