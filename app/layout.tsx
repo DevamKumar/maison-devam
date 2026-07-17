@@ -8,6 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { FloatingActions } from "@/components/layout/floating-actions";
+import { ConciergeChat } from "@/components/ai/concierge-chat";
 import { CustomCursor } from "@/components/ui/custom-cursor";
 
 const playfair = Playfair_Display({
@@ -48,6 +49,7 @@ export default function RootLayout({
           <Navbar />
           <main className="flex-grow pt-[72px]">{children}</main>
           <FloatingActions />
+          <ConciergeChat />
           <Footer />
           <Analytics />
           <SpeedInsights />
