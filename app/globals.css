@@ -1,26 +1,98 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f6f2;
+  --foreground: #1a1a1a;
+  --color-gold: #c9a227;
+  --color-gold-light: #e6c565;
+  --color-gold-dark: #967616;
+  --color-ivory: #f8f6f2;
+  --color-charcoal: #1a1a1a;
+  --color-beige: #e8dfd4;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-gold: #c9a227;
+  --color-gold-light: #e6c565;
+  --color-gold-dark: #967616;
+  --color-ivory: #f8f6f2;
+  --color-charcoal: #1a1a1a;
+  --color-beige: #e8dfd4;
+  --font-serif: var(--font-playfair), serif;
+  --font-sans: var(--font-inter), sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0d0d0d;
+    --foreground: #f8f6f2;
   }
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9a227;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e6c565;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Gold Shimmer Text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #e6c565 0%, #c9a227 50%, #967616 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gold Border Shimmer */
+.gold-border {
+  border-color: rgba(201, 162, 39, 0.4);
+}
+
+.gold-border:hover {
+  border-color: rgba(201, 162, 39, 0.9);
+}
+
+/* Ripple Animation */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.animate-ripple {
+  animation: ripple 0.8s linear infinite;
+}
+
+/* Glow Effect */
+.gold-glow {
+  box-shadow: 0 0 25px rgba(201, 162, 39, 0.25);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 35px rgba(201, 162, 39, 0.45);
 }
