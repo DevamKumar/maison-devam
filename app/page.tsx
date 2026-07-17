@@ -77,7 +77,7 @@ export default function HomePage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
-              className="flex flex-col items-center text-center p-4 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-gold/30 transition-all"
+              className="flex flex-col items-center text-center p-6 rounded-3xl glass-panel group transition-all duration-300"
             >
               <span className="font-serif text-4xl md:text-5xl font-bold gold-gradient-text mb-2">
                 {stat.value}
@@ -116,7 +116,7 @@ export default function HomePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.08, duration: 0.6 }}
-                className="p-8 rounded-3xl bg-white dark:bg-[#161616] border border-gold/20 hover:border-gold shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-start gap-4 group"
+                className="p-8 rounded-3xl glass-panel shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col items-start gap-4 group"
               >
                 <div className="p-4 rounded-2xl bg-gold/10 group-hover:bg-gold group-hover:text-charcoal transition-colors duration-300">
                   {getIconComponent(pillar.icon)}
@@ -240,7 +240,7 @@ export default function HomePage() {
                     </Link>
                     <Link
                       href={`/book?service=${service.id}`}
-                      className="px-5 py-2 rounded-full bg-charcoal dark:bg-white text-ivory dark:text-charcoal font-semibold text-xs tracking-wider uppercase hover:bg-gold hover:text-charcoal transition-all shadow-md flex items-center gap-1.5"
+                      className="px-5 py-2.5 rounded-full shimmer-gold text-charcoal font-bold text-xs tracking-wider uppercase transition-all shadow-md flex items-center gap-1.5 gold-glow hover:scale-105"
                     >
                       <Calendar className="w-3.5 h-3.5" />
                       <span>Book Now</span>
@@ -429,7 +429,7 @@ export default function HomePage() {
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
             <Link
               href="/book"
-              className="px-8 py-4 rounded-full bg-gold text-charcoal font-semibold text-xs tracking-[0.22em] uppercase hover:bg-gold-light transition-all gold-glow shadow-xl"
+              className="px-8 py-4 rounded-full shimmer-gold text-charcoal font-bold text-xs tracking-[0.22em] uppercase transition-all gold-glow hover:scale-105 shadow-xl"
             >
               Schedule Online Appointment
             </Link>

@@ -98,6 +98,33 @@ export const Hero: React.FC<HeroProps> = ({ onOpenVideo }) => {
           An architectural masterpiece worth ₹50+ lakh dedicated to haute coiffure, cellular aesthetic dermatology, and holistic Balinese wellness rituals.
         </motion.p>
 
+        {/* Floating Luxury Badges (Desktop Only) */}
+        <div className="absolute left-6 top-1/3 -translate-y-1/2 hidden xl:flex flex-col gap-1 p-3.5 rounded-2xl glass-panel animate-float text-left z-20 max-w-[210px] border border-gold/40 shadow-2xl">
+          <div className="flex items-center gap-1.5 text-gold text-[10px] font-bold tracking-widest uppercase">
+            <Sparkles className="w-3.5 h-3.5 text-[#25D366]" />
+            <span>Cellular Index</span>
+          </div>
+          <span className="font-serif text-white font-bold text-sm">
+            Epidermal Vitality: 98%
+          </span>
+          <span className="text-[10px] text-zinc-400 font-light">
+            24K Gold & Caviar Infusion
+          </span>
+        </div>
+
+        <div className="absolute right-6 top-1/2 -translate-y-1/2 hidden xl:flex flex-col gap-1 p-3.5 rounded-2xl glass-panel animate-float [animation-delay:2.5s] text-left z-20 max-w-[210px] border border-gold/40 shadow-2xl">
+          <div className="flex items-center gap-1.5 text-gold text-[10px] font-bold tracking-widest uppercase">
+            <Calendar className="w-3.5 h-3.5 text-gold" />
+            <span>Royal Suites</span>
+          </div>
+          <span className="font-serif text-white font-bold text-sm">
+            ₹50+ Lakh Soundproof
+          </span>
+          <span className="text-[10px] text-zinc-400 font-light">
+            Italian Wash Bed & Valet Ready
+          </span>
+        </div>
+
         {/* Action Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -107,7 +134,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenVideo }) => {
         >
           <Link
             href="/book"
-            className="w-full sm:w-auto px-8 py-4 rounded-full bg-gold text-charcoal font-semibold text-xs tracking-[0.22em] uppercase transition-all duration-300 hover:bg-gold-light gold-glow hover:scale-105 flex items-center justify-center gap-2.5"
+            className="w-full sm:w-auto px-8 py-4 rounded-full shimmer-gold text-charcoal font-bold text-xs tracking-[0.22em] uppercase transition-all duration-300 gold-glow hover:scale-105 flex items-center justify-center gap-2.5 shadow-xl"
           >
             <Calendar className="w-4 h-4" />
             <span>Book Appointment</span>

@@ -134,10 +134,9 @@ export const Navbar: React.FC = () => {
           {/* Book Now Button */}
           <Link
             href="/book"
-            className="relative inline-flex items-center justify-center px-6 py-2.5 rounded-full overflow-hidden font-medium text-xs uppercase tracking-[0.18em] transition-all duration-300 group bg-gold text-charcoal hover:bg-gold-light gold-glow hover:scale-105"
+            className="relative inline-flex items-center justify-center px-6 py-2.5 rounded-full overflow-hidden font-bold text-xs uppercase tracking-[0.18em] transition-all duration-300 group shimmer-gold text-charcoal gold-glow hover:scale-105 shadow-md"
           >
-            <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
-            <span className="relative z-10 flex items-center gap-2 font-semibold">
+            <span className="relative z-10 flex items-center gap-2">
               <Calendar className="w-3.5 h-3.5" />
               <span>Book Now</span>
             </span>

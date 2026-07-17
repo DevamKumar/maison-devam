@@ -113,7 +113,7 @@ export default function ServicesPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3, delay: index * 0.04 }}
-                  className="group relative rounded-3xl overflow-hidden bg-white dark:bg-[#161616] border border-gold/25 hover:border-gold shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col justify-between"
+                  className="group relative rounded-3xl overflow-hidden glass-panel shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col justify-between"
                 >
                   {/* Top Image */}
                   <div className="relative aspect-[16/10] w-full overflow-hidden">
@@ -187,7 +187,7 @@ export default function ServicesPage() {
                       </div>
                       <Link
                         href={`/book?service=${service.id}`}
-                        className="px-6 py-2.5 rounded-full bg-gold text-charcoal font-semibold text-xs tracking-wider uppercase hover:bg-gold-light transition-all shadow-md flex items-center gap-1.5"
+                        className="px-6 py-2.5 rounded-full shimmer-gold text-charcoal font-bold text-xs tracking-wider uppercase transition-all shadow-md flex items-center gap-1.5 gold-glow hover:scale-105"
                       >
                         <Calendar className="w-3.5 h-3.5" />
                         <span>Book Now</span>
