@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #f8f6f2;
   --foreground: #1a1a1a;
@@ -9,6 +11,11 @@
   --color-ivory: #f8f6f2;
   --color-charcoal: #1a1a1a;
   --color-beige: #e8dfd4;
+}
+
+.dark {
+  --background: #0d0d0d;
+  --foreground: #f8f6f2;
 }
 
 @theme inline {
@@ -22,13 +29,6 @@
   --color-beige: #e8dfd4;
   --font-serif: var(--font-playfair), serif;
   --font-sans: var(--font-inter), sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0d0d0d;
-    --foreground: #f8f6f2;
-  }
 }
 
 /* Custom Luxury Scrollbar */

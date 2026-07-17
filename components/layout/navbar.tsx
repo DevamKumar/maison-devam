@@ -10,7 +10,6 @@ import {
   X,
   Sun,
   Moon,
-  Calendar,
   Sparkles,
   PhoneCall,
   ChevronRight,
@@ -85,25 +84,27 @@ export const Navbar: React.FC = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        {/* Brand Logo */}
-        <Link
-          href="/"
-          className="flex items-center gap-2 group transition-transform duration-300 hover:scale-[1.02]"
-        >
-          <MaisonDevamLogo
-            variant="horizontal"
-            theme={isScrolled ? "auto" : "white"}
-            className="hidden sm:flex scale-90 md:scale-100"
-          />
-          <MaisonDevamLogo
-            variant="icon"
-            theme={isScrolled ? "auto" : "white"}
-            className="flex sm:hidden"
-          />
-        </Link>
+        {/* Left Column: Brand Logo */}
+        <div className="flex-1 flex items-center justify-start">
+          <Link
+            href="/"
+            className="flex items-center gap-2 group transition-transform duration-300 hover:scale-[1.02]"
+          >
+            <MaisonDevamLogo
+              variant="horizontal"
+              theme={isScrolled ? "auto" : "white"}
+              className="hidden sm:flex scale-90 md:scale-100"
+            />
+            <MaisonDevamLogo
+              variant="icon"
+              theme={isScrolled ? "auto" : "white"}
+              className="flex sm:hidden"
+            />
+          </Link>
+        </div>
 
-        {/* Desktop Nav Links */}
-        <nav className="hidden xl:flex items-center gap-5 text-xs uppercase tracking-[0.15em] font-medium">
+        {/* Center Column: Desktop Nav Links */}
+        <nav className="hidden lg:flex items-center justify-center gap-4 xl:gap-6 text-xs uppercase tracking-[0.15em] font-medium">
           {primaryLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -178,8 +179,8 @@ export const Navbar: React.FC = () => {
           </div>
         </nav>
 
-        {/* Action Controls */}
-        <div className="flex items-center gap-3">
+        {/* Right Column: Action Controls */}
+        <div className="flex-1 flex items-center justify-end gap-3">
           {/* Theme Switcher */}
           {mounted && (
             <button
@@ -199,22 +200,11 @@ export const Navbar: React.FC = () => {
             </button>
           )}
 
-          {/* Book Now Button */}
-          <Link
-            href="/book"
-            className="relative inline-flex items-center justify-center px-6 py-2.5 rounded-full overflow-hidden font-bold text-xs uppercase tracking-[0.18em] transition-all duration-300 group shimmer-gold text-charcoal gold-glow hover:scale-105 shadow-md"
-          >
-            <span className="relative z-10 flex items-center gap-2">
-              <Calendar className="w-3.5 h-3.5" />
-              <span>Book Now</span>
-            </span>
-          </Link>
-
           {/* Mobile Hamburger Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle mobile menu"
-            className={`xl:hidden p-2.5 rounded-xl border transition-colors ${
+            className={`lg:hidden p-2.5 rounded-xl border transition-colors ${
               isScrolled
                 ? "border-gold/30 text-foreground hover:border-gold"
                 : "border-white/30 text-white hover:border-gold bg-black/40 backdrop-blur-md"
@@ -231,7 +221,7 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="xl:hidden fixed inset-0 top-[68px] bg-ivory/95 dark:bg-[#0d0d0d]/95 backdrop-blur-2xl z-50 overflow-y-auto px-6 py-8 border-t border-gold/20 animate-in fade-in slide-in-from-top-5 duration-300">
+        <div className="lg:hidden fixed inset-0 top-[68px] bg-ivory/95 dark:bg-[#0d0d0d]/95 backdrop-blur-2xl z-50 overflow-y-auto px-6 py-8 border-t border-gold/20 animate-in fade-in slide-in-from-top-5 duration-300">
           <div className="flex flex-col gap-4 max-w-md mx-auto">
             <div className="pb-4 border-b border-gold/20 text-center">
               <span className="font-serif text-lg tracking-[0.14em] text-gold uppercase">
