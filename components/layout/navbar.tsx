@@ -8,8 +8,6 @@ import { MaisonDevamLogo } from "@/components/ui/logo";
 import {
   Menu,
   X,
-  Sun,
-  Moon,
   Sparkles,
   PhoneCall,
   ChevronRight,
@@ -20,12 +18,15 @@ export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [exploreOpen, setExploreOpen] = useState(false);
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
     setMounted(true);
+    if (theme !== "system") {
+      setTheme("system");
+    }
     const handleScroll = () => {
       if (window.scrollY > 40) {
         setIsScrolled(true);
@@ -36,7 +37,7 @@ export const Navbar: React.FC = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [theme, setTheme]);
 
   const primaryLinks = [
     { label: "Home", href: "/" },
@@ -70,10 +71,6 @@ export const Navbar: React.FC = () => {
     { label: "Blogs", href: "/blogs" },
     { label: "Contact", href: "/contact" },
   ];
-
-  const toggleTheme = () => {
-    setTheme(resolvedTheme === "dark" ? "light" : "dark");
-  };
 
   return (
     <header
@@ -181,25 +178,6 @@ export const Navbar: React.FC = () => {
 
         {/* Right Column: Action Controls */}
         <div className="flex-1 flex items-center justify-end gap-3">
-          {/* Theme Switcher */}
-          {mounted && (
-            <button
-              onClick={toggleTheme}
-              aria-label="Toggle theme"
-              className={`p-2.5 rounded-full transition-all duration-300 border ${
-                isScrolled
-                  ? "border-gold/30 hover:border-gold bg-ivory dark:bg-zinc-900 text-foreground"
-                  : "border-white/30 hover:border-gold bg-black/40 text-white backdrop-blur-md"
-              }`}
-            >
-              {resolvedTheme === "dark" ? (
-                <Sun className="w-4 h-4 text-gold animate-spin-slow" />
-              ) : (
-                <Moon className="w-4 h-4 text-gold" />
-              )}
-            </button>
-          )}
-
           {/* Mobile Hamburger Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
