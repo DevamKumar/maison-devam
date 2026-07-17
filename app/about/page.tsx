@@ -49,7 +49,7 @@ export default function AboutPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
             <div className="absolute bottom-8 left-8 right-8 text-white">
               <span className="text-xs uppercase text-gold font-semibold tracking-widest block mb-1">
-                MG Road, Bengaluru
+                Ambala Road, Naraingarh
               </span>
               <h3
                 className="font-serif font-bold text-2xl"
@@ -74,7 +74,7 @@ export default function AboutPage() {
               Founded by master architect and international couturier **Devam Kumar**, Maison Devam was born from a singular philosophy: true luxury occurs when cutting-edge aesthetic science meets the healing tranquility of an Eastern sanctuary.
             </p>
             <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 leading-relaxed font-light">
-              After spending over a decade studying precision sculpting across Milan and Paris alongside traditional Ayurvedic and Balinese therapeutic bodywork, Devam returned to Bengaluru to establish a ₹50+ lakh flagship destination. Every detail—from our custom Italian hair wash spa chairs to hospital-grade sterilization autoclaves—is engineered to ensure your time with us is restorative and deeply transformative.
+              After spending over a decade studying precision sculpting across Milan and Paris alongside traditional Ayurvedic and Balinese therapeutic bodywork, Devam returned to Naraingarh to establish a ₹50+ lakh flagship destination. Every detail—from our custom Italian hair wash spa chairs to hospital-grade sterilization autoclaves—is engineered to ensure your time with us is restorative and deeply transformative.
             </p>
 
             <div className="grid grid-cols-2 gap-6 pt-4 border-t border-gold/20">

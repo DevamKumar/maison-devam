@@ -64,7 +64,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenVideo }) => {
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold/40 bg-black/50 backdrop-blur-md text-gold text-xs font-medium tracking-[0.24em] uppercase"
         >
           <Sparkles className="w-3.5 h-3.5 animate-spin-slow" />
-          <span>Bengaluru’s Premier Luxury Sanctuary</span>
+          <span>Naraingarh’s Premier Luxury Sanctuary</span>
         </motion.div>
 
         {/* Main Title */}

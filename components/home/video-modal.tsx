@@ -58,7 +58,7 @@ export const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
           {/* Bottom Caption Overlay */}
           <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
             <p className="text-xs text-zinc-300 max-w-2xl font-light tracking-wide">
-              Step inside our ₹50+ lakh luxury sanctuary on MG Road, Bengaluru. Featuring private acoustic suites, genuine Italian hair washing spas, and medical-grade aesthetic technology.
+              Step inside our ₹50+ lakh luxury sanctuary on Ambala Road, Naraingarh. Featuring private acoustic suites, genuine Italian hair washing spas, and medical-grade aesthetic technology.
             </p>
           </div>
         </motion.div>

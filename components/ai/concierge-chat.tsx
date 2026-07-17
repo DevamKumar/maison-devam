@@ -224,11 +224,11 @@ export const ConciergeChat: React.FC = () => {
     }
 
     // 5. Check for Location, Valet, Parking
-    if (q.includes("where") || q.includes("location") || q.includes("address") || q.includes("park") || q.includes("valet") || q.includes("mg road")) {
+    if (q.includes("where") || q.includes("location") || q.includes("address") || q.includes("park") || q.includes("valet") || q.includes("naraingarh") || q.includes("ambala road")) {
       return {
         id: `bot-${Date.now()}`,
         sender: "aurelia",
-        text: `**Sanctuary Address:** 124, MG Road, Ashok Nagar, Bengaluru, Karnataka 560001.\n\n**Valet & Arrival:** We provide complimentary private valet parking at our grand portico. Upon arrival, you will be escorted to your private soundproof suite with a welcome selection of Japanese Sencha Green Tea or chilled French Champagne.`,
+        text: `**Sanctuary Address:** Ambala Road, Civil Hospital Road, Naraingarh, Haryana 134203.\n\n**Valet & Arrival:** We provide complimentary private valet parking at our grand portico. Upon arrival, you will be escorted to your private soundproof suite with a welcome selection of Japanese Sencha Green Tea or chilled French Champagne.`,
         timestamp,
         suggestedActions: [
           { label: "🗺️ Get Directions & Contact info", actionType: "external_link", payload: "/contact" },
@@ -298,7 +298,7 @@ export const ConciergeChat: React.FC = () => {
     return {
       id: `bot-${Date.now()}`,
       sender: "aurelia",
-      text: `Thank you for consulting with me. As your luxury concierge, I can assist you with:\n\n• Bespoke appointment reservations across our 24 specialized treatments\n• Assigning specific master artisans like Devam Kumar or Elena Rostova\n• Details on pricing, duration, and VIP membership entitlements\n• Valet parking, private soundproof suites, and MG Road directions\n\nHow may I arrange your visit today?`,
+      text: `Thank you for consulting with me. As your luxury concierge, I can assist you with:\n\n• Bespoke appointment reservations across our 24 specialized treatments\n• Assigning specific master artisans like Devam Kumar or Elena Rostova\n• Details on pricing, duration, and VIP membership entitlements\n• Valet parking, private soundproof suites, and Ambala Road, Naraingarh directions\n\nHow may I arrange your visit today?`,
       timestamp,
       suggestedActions: [
         { label: "✨ Start Interactive Booking", actionType: "select_category" },

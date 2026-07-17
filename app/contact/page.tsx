@@ -92,10 +92,10 @@ export default function ContactPage() {
                 className="font-serif text-3xl sm:text-4xl font-bold uppercase text-foreground leading-tight mb-4"
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
-                Our MG Road Flagship
+                Our Naraingarh Flagship
               </h2>
               <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed font-light">
-                Situated in the heart of Bengaluru’s luxury boulevard, Maison Devam offers private elevator entry and bespoke valet assistance for total confidentiality.
+                Situated in the heart of Naraingarh’s luxury avenue on Ambala Road, Maison Devam offers private elevator entry and bespoke valet assistance for total confidentiality.
               </p>
             </div>
 
@@ -109,7 +109,7 @@ export default function ContactPage() {
                     Address
                   </h4>
                   <p className="text-xs text-zinc-500 mt-1 font-light leading-relaxed">
-                    Maison Devam, 4th Floor, Emperor Plaza, MG Road, Bengaluru, Karnataka 560001, India
+                    Maison Devam, Civil Hospital Road, Ambala Road, Naraingarh, Haryana 134203, India
                   </p>
                 </div>
               </div>
@@ -334,7 +334,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto rounded-3xl overflow-hidden aspect-video max-h-[450px] relative border border-gold/40 shadow-2xl group">
           <img
             src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=1600"
-            alt="Bengaluru MG Road Map Simulation"
+            alt="Naraingarh Ambala Road Map Simulation"
             className="w-full h-full object-cover filter brightness-75 contrast-125 group-hover:scale-105 transition-transform duration-700"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col items-center justify-center p-6 text-center">
@@ -342,10 +342,10 @@ export default function ContactPage() {
               <MapPin className="w-8 h-8" />
             </div>
             <h3 className="font-serif text-2xl sm:text-4xl font-bold uppercase tracking-wider">
-              MG Road, Bengaluru, Karnataka
+              Ambala Road, Naraingarh, Haryana
             </h3>
             <p className="text-xs text-gold uppercase tracking-[0.3em] font-semibold mt-2">
-              Coordinates: 12.9716° N, 77.5946° E • Private Valet Available
+              Coordinates: 30.4820° N, 77.1265° E • Private Valet Available
             </p>
             <a
               href="https://maps.google.com"

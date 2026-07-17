@@ -837,7 +837,7 @@ function BookingWizardContent() {
                   <p className="flex items-center gap-1.5 text-gold font-semibold mb-1">
                     <ShieldCheck className="w-3.5 h-3.5" /> No Online Pre-Payment Required
                   </p>
-                  You may settle your tariff via American Express, Visa, Mastercard, or UPI directly at our MG Road reception desk following your treatment.
+                  You may settle your tariff via American Express, Visa, Mastercard, or UPI directly at our Ambala Road reception desk following your treatment.
                 </div>
               </div>
             </div>
@@ -910,7 +910,7 @@ function BookingWizardContent() {
             </div>
 
             <p className="text-xs text-zinc-400 max-w-xl leading-relaxed font-light">
-              We look forward to welcoming you to our MG Road sanctuary. Please present this reference number upon entry for valet clearance and complimentary champagne service.
+              We look forward to welcoming you to our Naraingarh sanctuary. Please present this reference number upon entry for valet clearance and complimentary champagne service.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4 pt-4">

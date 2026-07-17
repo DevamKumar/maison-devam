@@ -228,7 +228,7 @@ export default function AdminPage() {
                 Executive Management Portal
               </h1>
               <span className="text-[11px] text-gold uppercase tracking-widest font-mono">
-                Flagship: MG Road, Bengaluru
+                Flagship: Ambala Road, Naraingarh
               </span>
             </div>
           </div>
@@ -574,7 +574,7 @@ export default function AdminPage() {
                     Executive Sanctuary Insights
                   </h3>
                   <p className="text-xs text-zinc-400 leading-relaxed font-light">
-                    Your ₹50+ lakh architectural upgrade on MG Road has generated significant brand appreciation among Bangalore’s elite demographic. Private VIP Soundproof Suite bookings account for 68% of total weekend reservations.
+                    Your ₹50+ lakh architectural upgrade on Ambala Road has generated significant brand appreciation among Naraingarh’s discerning elite demographic. Private VIP Soundproof Suite bookings account for 68% of total weekend reservations.
                   </p>
                 </div>
 

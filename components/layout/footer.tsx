@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
               <MaisonDevamLogo variant="horizontal" theme="gold" />
             </Link>
             <p className="font-sans text-sm leading-relaxed text-zinc-400 max-w-sm">
-              Maison Devam is Bengaluru’s premier architectural sanctuary of haute coiffure, cellular aesthetic therapies, and Balinese wellness rituals. Designed for the discerning patron seeking absolute serenity.
+              Maison Devam is Naraingarh’s premier architectural sanctuary of haute coiffure, cellular aesthetic therapies, and Balinese wellness rituals. Designed for the discerning patron seeking absolute serenity.
             </p>
             <div className="flex items-center gap-4 text-gold">
               <a
@@ -120,7 +120,7 @@ export const Footer: React.FC = () => {
             <div className="flex flex-col gap-3 text-xs text-zinc-300 leading-relaxed">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-gold flex-shrink-0 mt-0.5" />
-                <span>MG Road, Bengaluru, Karnataka 560001, India</span>
+                <span>Ambala Road, Naraingarh, Haryana 134203, India</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-gold flex-shrink-0" />
@@ -197,7 +197,7 @@ export const Footer: React.FC = () => {
             </Link>
           </div>
           <p className="flex items-center gap-1 text-[11px]">
-            © {currentYear} Maison Devam. Crafted with <Heart className="w-3 h-3 text-gold fill-gold" /> in Bengaluru.
+            © {currentYear} Maison Devam. Crafted with <Heart className="w-3 h-3 text-gold fill-gold" /> in Naraingarh.
           </p>
         </div>
       </div>

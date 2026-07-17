@@ -6,16 +6,16 @@ export const siteMetadata: Metadata = {
     template: "%s | Maison Devam Luxury Salon & Spa",
   },
   description:
-    "Experience the pinnacle of luxury, beauty, and serenity at Maison Devam. Offering precision hairstyling, 24K gold facials, Balinese spa rituals, bridal couture makeup, and world-class aesthetic care in Bengaluru.",
+    "Experience the pinnacle of luxury, beauty, and serenity at Maison Devam. Offering precision hairstyling, 24K gold facials, Balinese spa rituals, bridal couture makeup, and world-class aesthetic care in Naraingarh, Haryana.",
   keywords: [
     "Maison Devam",
-    "Luxury Salon Bengaluru",
-    "Luxury Spa MG Road",
-    "Bridal Makeup Artist Bengaluru",
-    "Hair Botox Treatment",
-    "Hydra Facial Bangalore",
+    "Luxury Salon Naraingarh",
+    "Luxury Spa Ambala Road",
+    "Bridal Makeup Artist Naraingarh",
+    "Hair Botox Treatment Haryana",
+    "Hydra Facial Naraingarh",
     "Balinese Massage Spa",
-    "Best Luxury Salon India",
+    "Best Luxury Salon Haryana",
     "24K Gold Facial",
     "Keratin Treatment",
   ],
@@ -30,7 +30,7 @@ export const siteMetadata: Metadata = {
   openGraph: {
     title: "Maison Devam | Luxury Salon & Spa Sanctuary",
     description:
-      "Luxury. Beauty. Serenity. Step inside Bengaluru's premier salon & spa destination worth ₹50+ lakh in architectural splendor.",
+      "Luxury. Beauty. Serenity. Step inside Naraingarh's premier salon & spa destination worth ₹50+ lakh in architectural splendor.",
     url: "https://maisondevam.com",
     siteName: "Maison Devam Luxury Salon & Spa",
     images: [
@@ -70,16 +70,16 @@ export const jsonLdLocalBusiness = {
   priceRange: "₹₹₹₹",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Maison Devam Luxury Sanctuary, MG Road",
-    addressLocality: "Bengaluru",
-    addressRegion: "KA",
-    postalCode: "560001",
+    streetAddress: "Maison Devam Luxury Sanctuary, Ambala Road",
+    addressLocality: "Naraingarh",
+    addressRegion: "HR",
+    postalCode: "134203",
     addressCountry: "IN",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 12.9754,
-    longitude: 77.6068,
+    latitude: 30.4820,
+    longitude: 77.1265,
   },
   openingHoursSpecification: [
     {

@@ -130,7 +130,7 @@ export default function BlogPostPage({
             </p>
 
             <p>
-              When experiencing true high-fashion couture in our ₹50+ lakh MG Road facility, we often emphasize that architectural tranquility and cellular aesthetics must work in synergy. The balance between botanical purity and high-performance dermatological actives is precisely what distinguishes an ordinary appointment from an unforgettable sensory ritual.
+              When experiencing true high-fashion couture in our ₹50+ lakh Ambala Road, Naraingarh facility, we often emphasize that architectural tranquility and cellular aesthetics must work in synergy. The balance between botanical purity and high-performance dermatological actives is precisely what distinguishes an ordinary appointment from an unforgettable sensory ritual.
             </p>
 
             <h3 className="font-serif text-2xl font-bold text-foreground mt-8 mb-4">

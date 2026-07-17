@@ -723,7 +723,7 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
     clientName: "Ananya Birla",
     serviceUsed: "Creative Cut & Global Hair Color",
     rating: 5,
-    review: "Maison Devam is without a doubt the most luxurious salon experience in Bengaluru. Elena transformed my hair with the most stunning honey balayage. The champagne service and private suite made me feel like royalty!",
+    review: "Maison Devam is without a doubt the most luxurious salon experience in Naraingarh. Elena transformed my hair with the most stunning honey balayage. The champagne service and private suite made me feel like royalty!",
     clientImage: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300",
     date: "2 days ago",
   },
@@ -1077,7 +1077,7 @@ For the ultimate restorative experience, we recommend pairing your Balinese mass
     content: `
 # Monsoon Serenity: The Ultimate Luxury Hair & Skin Care Guide
 
-As the refreshing monsoon rains sweep across Bengaluru, the surge in atmospheric humidity introduces unique challenges for both hair and skin. Excessive moisture can cause frizz, scalp congestion, and uneven skin texture if not managed with tailored formulations.
+As the seasonal rains and changes sweep across Naraingarh, the surge in atmospheric humidity introduces unique challenges for both hair and skin. Excessive moisture can cause frizz, scalp congestion, and uneven skin texture if not managed with tailored formulations.
 
 ## Top Monsoon Hair Essentials
 
